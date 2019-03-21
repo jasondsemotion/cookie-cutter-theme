@@ -49,7 +49,6 @@
     </div>
 </footer>
 
-<p>hhhdhddhdh</p>
 
 </div>
 <?php wp_footer(); ?>
