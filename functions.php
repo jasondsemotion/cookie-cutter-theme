@@ -54,6 +54,8 @@ require_once( 'library/responsive-images.php' );
 /** Map */
 // require_once( 'library/init-google-maps.php' );
 
+require_once( 'library/acf.php' );
+
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
