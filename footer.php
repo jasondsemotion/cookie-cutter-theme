@@ -45,13 +45,11 @@
     <div class="footer-container">
         <div class="footer-grid">
             <?php dynamic_sidebar( 'footer-widgets' ); ?>
-
-            Jason was here
-
         </div>
     </div>
 </footer>
 
+<p>hhhdhddhdh</p>
 
 </div>
 <?php wp_footer(); ?>
