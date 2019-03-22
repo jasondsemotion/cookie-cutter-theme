@@ -8,36 +8,50 @@
  *
  */
 ?>
+<div class="page-section main-container " >
 
-<div class="owl-carousel owl-theme owl-block-slider" id="hero">
-<?php
-	if( have_rows('hero_type') ):
 
-		// loop through the rows of data
-		while ( have_rows('hero_type') ) : the_row();
+	<div class="grid-x grid-margin-x">
 
-				if( get_row_layout() == 'hero_banner' ):
+		<div class="cell small-12">
 
-					//Level 1
-					get_template_part( 'template-parts/hero/hero' );
+		<div class="owl-carousel owl-theme owl-block-slider" id="hero">
+		<?php
+			if( have_rows('hero_type') ):
 
-				elseif( get_row_layout() == 'hero_img_banner' ):
+				// loop through the rows of data
+				while ( have_rows('hero_type') ) : the_row();
 
-					//Level 2
-					get_template_part( 'template-parts/hero/hero-img' );
+						if( get_row_layout() == 'hero_banner' ):
 
-				//elseif( get_row_layout() == 'three_columns' ):
+							//Level 1
+							get_template_part( 'template-parts/hero/hero' );
 
-					//get_template_part( 'template-parts/text/three-col' );
+						elseif( get_row_layout() == 'hero_img_banner' ):
 
-				endif;
+							//Level 2
+							get_template_part( 'template-parts/hero/hero-img' );
 
-		 endwhile;
+						//elseif( get_row_layout() == 'three_columns' ):
 
-		else :
+							//get_template_part( 'template-parts/text/three-col' );
 
-		 // no layouts found
+						endif;
 
-	endif;
-?>
+				 endwhile;
+
+				else :
+
+				 // no layouts found
+
+			endif;
+		?>
+		</div>
+
+		</div>
+
+
+	</div>
+
+
 </div>
