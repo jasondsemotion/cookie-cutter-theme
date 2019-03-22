@@ -1,11 +1,7 @@
 <?php
 /**
- * ACF
- *
- * @link http://codex.wordpress.org/Function_Reference/register_nav_menus#Examples
- * @package FoundationPress
- * @since FoundationPress 1.0.0
- */
+* ACF
+*/
 
 if( function_exists('acf_add_local_field_group') ):
 
@@ -321,10 +317,55 @@ acf_add_local_field_group(array(
 		),
 		array(
 			'key' => 'field_5c94c96b0405d',
-			'label' => 'Mobile Menu Link Color',
+			'label' => 'Mobile Menu Link Colour',
 			'name' => 'mobile_menu_color',
 			'type' => 'color_picker',
 			'instructions' => 'Choose Mobile Menu Link Colour',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+		),
+		array(
+			'key' => 'field_5c950911af504',
+			'label' => 'Footer Background Colour',
+			'name' => 'footer_background_colour',
+			'type' => 'color_picker',
+			'instructions' => 'Footer Background colour',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+		),
+		array(
+			'key' => 'field_5c950ad2cf326',
+			'label' => 'Footer Background Colour Text',
+			'name' => 'footer_background_colour_text',
+			'type' => 'color_picker',
+			'instructions' => 'Footer Background colour text',
+			'required' => 0,
+			'conditional_logic' => 0,
+			'wrapper' => array(
+				'width' => '33',
+				'class' => '',
+				'id' => '',
+			),
+			'default_value' => '',
+		),
+		array(
+			'key' => 'field_5c950dda4211a',
+			'label' => 'Footer Header Colour Text',
+			'name' => 'footer_header_colour_text',
+			'type' => 'color_picker',
+			'instructions' => 'Footer Header colour text',
 			'required' => 0,
 			'conditional_logic' => 0,
 			'wrapper' => array(

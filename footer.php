@@ -39,13 +39,7 @@
             </div>
             <div class="cell small-12 accreditation">
                 &copy; <?= date('Y'); ?> <?php wp_nav_menu(); ?>
-                Test
             </div>
-        </div>
-    </div>
-    <div class="footer-container">
-        <div class="footer-grid">
-            <?php dynamic_sidebar( 'footer-widgets' ); ?>
         </div>
     </div>
 </footer>

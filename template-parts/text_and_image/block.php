@@ -55,17 +55,17 @@ if($widths == 'seventy-thirty') {
 	                <h2><?= $title ?></h2>
 	            </div>
 	            <div data-aos="fade-right" data-aos-delay="1500"><?= $content ?></div>
-	            <img data-aos="fade-left" data-aos-delay="1800" src="<?= $secondary_image ?>">
+	            <img class="txt-img-blk" data-aos="fade-left" data-aos-delay="1800" src="<?= $secondary_image ?>">
 	        </div>
 
 	        <div data-aos="fade-left" data-aos-delay="400" class="cell <?= $width_two ?>">
-	        <img data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]" alt="">
+	        <img class="txt-img-blk" data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]" alt="">
 	        </div>
 
         <?php } else { ?>
 
         <div data-aos="fade-right" data-aos-delay="400" class="cell <?= $width_one ?>">
-            <img data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]" alt="">
+            <img class="txt-img-blk" data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]" alt="">
         </div>
 
         <div class="cell <?= $width_two ?>" style="background-color:<?= $background ?>; padding:<?= $padding ?>;">

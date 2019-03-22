@@ -28,6 +28,11 @@
 	$nav_font_colour= get_field('nav_font_colour');
 
 
+	$footer_background_colour = get_field('footer_background_colour');
+	$footer_background_colour_text = get_field('footer_background_colour_text');
+	$footer_header_colour_text = get_field('footer_header_colour_text');
+
+
 
 ?>
 
@@ -144,6 +149,25 @@
     }
     #header .mobile-nav ul li a {
 	    color: <?= $mobile_menu_color ?>;
+    }
+
+
+    #footer {
+	    background: <?= $footer_background_colour ?>;
+	    color: <?= $footer_background_colour_text ?>;
+    }
+    #footer p, #footer .name {
+	     color: <?= $footer_background_colour_text ?>;
+    }
+    #footer h1, #footer h3, #footer h4, #footer h5, #footer h6 {
+	    color:  <?= $footer_header_colour_text ?>
+    }
+    #footer .contact a {
+	    color: <?= $primary; ?>;
+    }
+    .menu-footer-menu-container li a {
+	    color: <?= $footer_background_colour_text ?> !important;
+	    border-right: 1px solid <?= $footer_background_colour_text ?>;
     }
 
     /*.bg-img::before {
