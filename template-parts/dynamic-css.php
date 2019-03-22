@@ -21,6 +21,14 @@
 
 
     $line_height = get_field('line_height');
+
+
+    $mobile_menu_background = get_field('mobile_menu_background');
+    $mobile_menu_color = get_field('mobile_menu_color');
+	$nav_font_colour= get_field('nav_font_colour');
+
+
+
 ?>
 
 
@@ -36,7 +44,7 @@
     .navigation__link {
         font-family: <?= $header_font_family ?>;
         font-size: <?= $header_font_size ?>px;
-        color: <?= $header_font_colour ?>;
+        color: <?= $nav_font_colour ?>;
         font-weight: 500;
         text-transform: uppercase;
     }
@@ -64,15 +72,27 @@
         font-weight: 500;
     }
 
+    h1 {
+	    font-size: 6vw;
+    }
+
     h3 {
         font-size: <?= $heading_font_size / 2 + 5; ?>px;
     }
 
     h4 {
-        font-size: <?= $heading_font_size / 3 + 5; ?>px;
+        font-size: <?= $heading_font_size / 3 + 9; ?>px;
     }
 
-    h2, .h2 {
+    h5 {
+        font-size: <?= $heading_font_size / 2; ?>px;
+    }
+
+    h6 {
+        font-size: <?= $heading_font_size / 3; ?>px;
+    }
+
+    .title h2, .title .h2 {
         background: linear-gradient(to bottom, <?= $heading_bg_colour; ?> 0%, <?= $heading_bg_colour; ?> 50%, <?= $heading_bg_colour; ?> 100%, <?= $heading_bg_colour; ?> 100%);
         /*color: <?= $primary; ?>;*/
         color: <?= $header_font_colour; ?>;
@@ -103,14 +123,38 @@
 
     .navigation__link.active {
 	    border-bottom: 2px solid <?= $primary ?>;
+	    color: <?= $nav_font_colour ?>;
     }
-    .navigation__link:hover {
+    .navigation__link:hover,.navigation__link:focus {
 	    border-bottom: 2px solid <?= $primary ?>;
+	    color: <?= $nav_font_colour ?>;
     }
 
 
     .main-container {
 		background: <?= $container_bg ?>;
     }
+
+    .mobile-nav {
+	    background: <?= $mobile_menu_background ?>;
+    }
+    .mobile-nav ul {
+	    background: transparent;
+    }
+    #header .mobile-nav ul li a {
+	    color: <?= $mobile_menu_color ?>;
+    }
+
+    /*.bg-img::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		background: <?= $overlay_bg ?>;
+		opacity: 0.7;
+	}
+	.hero-inner h1 {
+		color: <?= $overlay_txt ?>;
+	}*/
+
 
 </style>

@@ -10,7 +10,11 @@
             <div class="title">
                 <h2 data-aos="fade-left" data-aos-delay="750"><?= $title ?></h2>
             </div>
-            <div data-aos="fade-right" data-aos-delay="1500"><?= $content ?></div>
+            <div data-aos="fade-right" data-aos-delay="1500">
+	            <div class="copy-box">
+	            <?= $content ?>
+	            </div>
+	        </div>
         </div>
     </div>
 </section>

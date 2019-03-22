@@ -21,10 +21,10 @@
 					//Level 1
 					get_template_part( 'template-parts/hero/hero' );
 
-				elseif( get_row_layout() == 'hero_video' ):
+				elseif( get_row_layout() == 'hero_img_banner' ):
 
 					//Level 2
-					get_template_part( 'template-parts/hero/hero-video' );
+					get_template_part( 'template-parts/hero/hero-img' );
 
 				//elseif( get_row_layout() == 'three_columns' ):
 

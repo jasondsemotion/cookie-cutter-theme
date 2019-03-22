@@ -3,7 +3,7 @@
  *
  *
  *
- * Hero - Level 1
+ * Hero - Level 2
  *
  *
  */
@@ -15,16 +15,9 @@
 	$content = get_sub_field('content');
 	$link = get_sub_field('link');
 	$link_title = get_sub_field('link_title');
-
-	// Overlay
-    $overlay_bg = get_sub_field('overlay_colour');
-    $overlay_txt = get_sub_field('overlay_text_colour');
-
 ?>
 
-
-
-<div class="hero special-color">
+<div class="hero">
 	<div class="hero-inner">
 		<div class="grid-x grid-margin-x">
 			<div class="cell medium-12 large-12">

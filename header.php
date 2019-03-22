@@ -29,20 +29,21 @@
 
 	<?php
 		$header_logo = get_field('logo');
+		$smllheader_logo = get_field('logo_sticky');
 	?>
 
 	<div id="site">
 
 	<header id="header" class="main-container" role="banner">
 		<div class="grid-x grid-margin-x">
-			<div class="cell small-12 phone-6 mobile-6 medium-12" data-aos="fade-left" data-aos-delay="300">
+			<div class="cell small-12 phone-12 mobile-12 medium-12" data-aos="fade-left" data-aos-delay="300">
 			<?php if($header_logo) { ?>
 				<img class="header-logo" src="<?= $header_logo['url'] ?>" alt="">
 			<?php } else { ?>
 				<img class="header-logo" src="https://via.placeholder.com/450x175" alt="">
 			<?php } ?>
 			</div>
-			<div class="cell small-12 phone-6 mobile-6 medium-12">
+			<div class="cell small-12 phone-12 mobile-12 medium-12">
 				<nav class="navigation" id="mainNav" data-aos="fade-right" data-aos-delay="600">
 					<?php if($header_logo) { ?>
 						<div class="sticky-logo">
@@ -50,22 +51,41 @@
 						</div>
 					<?php } ?>
 
+
+					<div class="grid-x mob-inner">
+						<div class="cell small-6">
+							<?php if($smllheader_logo) { ?>
+								<div class="sticky-logo-sub">
+									<img data-interchange="[<?php echo $smllheader_logo['sizes']['featured-medium'];?>, small], [<?php echo $smllheader_logo['sizes']['featured-medium'];?>, medium], [<?php echo $smllheader_logo['sizes']['featured-large'];?>, large], [<?php echo $smllheader_logo['sizes']['featured-xlarge'];?>, xlarge]" alt="">
+								</div>
+							<?php } else { ?>
+								<div class="sticky-logo-title">
+									<h4><?php bloginfo( 'name' ); ?></h4>
+								</div>
+							<?php } ?>
+						</div>
+						<div class="cell small-6">
+								<button class="hamburger-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>">
+								<span class="line--1"></span>
+								<span class="line--2"></span>
+								<span class="line--3"></span>
+								<span class="line--4"></span>
+								</button>
+						</div>
+					</div>
+
+
 					<div class="nav-links">
 						<?php if( have_rows('navigation') ): while ( have_rows('navigation') ) : the_row();
 						echo '<a class="navigation__link" href="#' . get_sub_field('section_id') . '">' . get_sub_field('menu_label') . '</a>';
 						endwhile; else : endif; ?>
 					</div>
 
-					<button class="hamburger-icon" type="button" data-toggle="<?php foundationpress_mobile_menu_id(); ?>">
-								<span class="line--1"></span>
-								<span class="line--2"></span>
-								<span class="line--3"></span>
-								<span class="line--4"></span>
-					</button>
+
 
 					<div class="mobile-nav" role="navigation">
 						<ul>
-					  <?php if( have_rows('navigation') ): while ( have_rows('navigation') ) : the_row();
+						<?php if( have_rows('navigation') ): while ( have_rows('navigation') ) : the_row();
 						echo '<li><a class="navigation__link" href="#' . get_sub_field('section_id') . '">' . get_sub_field('menu_label') . '</a></li>';
 						endwhile; else : endif; ?>
 						</ul>
