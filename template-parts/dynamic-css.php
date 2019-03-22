@@ -96,6 +96,7 @@
         background: linear-gradient(to bottom, <?= $heading_bg_colour; ?> 0%, <?= $heading_bg_colour; ?> 50%, <?= $heading_bg_colour; ?> 100%, <?= $heading_bg_colour; ?> 100%);
         /*color: <?= $primary; ?>;*/
         color: <?= $header_font_colour; ?>;
+        display: inline;
     }
 
     html, body, p, .p {

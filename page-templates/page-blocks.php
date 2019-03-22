@@ -50,6 +50,18 @@ get_header(); ?>
 								get_template_part( 'template-parts/full_width_text/block' );
 
 
+							elseif( get_row_layout() == 'map' ):
+
+								 // load slider
+					        	get_template_part( 'template-parts/map/block' );
+
+
+					        elseif( get_row_layout() == 'embed_block' ):
+
+								// load embed
+								get_template_part( 'template-parts/embed/block' );
+
+
 							elseif( get_row_layout() == 'masonary_gallery' ):
 
 								// load quote
