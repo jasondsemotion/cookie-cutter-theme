@@ -1665,7 +1665,7 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'collapsed' => '',
-			'min' => 2,
+			'min' => 1,
 			'max' => 0,
 			'layout' => 'table',
 			'button_label' => 'Add New Contact',
