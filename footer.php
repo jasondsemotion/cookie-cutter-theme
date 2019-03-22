@@ -24,7 +24,7 @@
 	                </div>
 				</div>
 
-                <div class="grid-x grid-margin-x footer-detail">
+                <div class="grid-x grid-margin-x footer-detail--">
 	                <div class="cell small-12 medium-12 large-4 logo-col">
 		                <div class="logo">
 		                    <img src="<?= $footer_logo['url'] ?>" alt="">
