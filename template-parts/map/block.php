@@ -13,7 +13,7 @@
 
 ?>
 
-<section class="page-section main-container map-container" id="<?php echo $section_id; ?>">
+<section class="page-section main-container map-container" id="<?php echo $id; ?>">
 	<div class="grid-x grid-margin-x">
 		<?php if($title) { ?>
 			<div class="cell small-12 large-6">

@@ -170,6 +170,11 @@
 	    border-right: 1px solid <?= $footer_background_colour_text ?>;
     }
 
+
+    .hamburger-icon span {
+	    background: <?= $mobile_menu_color ?>;
+    }
+
     /*.bg-img::before {
 		content: '';
 		width: 100%;
