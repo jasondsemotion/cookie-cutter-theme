@@ -172,7 +172,7 @@
 
 
     .hamburger-icon span {
-	    background: <?= $mobile_menu_color ?>;
+	    background: <?= $heading_bg_colour ?>;
     }
 
     /*.bg-img::before {
