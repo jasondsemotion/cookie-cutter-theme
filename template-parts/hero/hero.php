@@ -27,7 +27,8 @@
 
 
 <div class="hero">
-	<div class="hero-inner <?php echo $content_pos; ?>">
+	<div class="bg-img <?php echo $overlay_bg; ?>" data-aos="fade-left" data-aos-delay="900" data-interchange="[<?php echo $banner_image['sizes']['fp-large'];?>, small], [<?php echo $banner_image['sizes']['fp-large'];?>, medium], [<?php echo $banner_image['sizes']['fp-large'];?>, large], [<?php echo $banner_image['sizes']['fp-xlarge'];?>, xlarge]"></div>
+	<div class="hero-inner <?php echo $content_pos; ?> hero-style-<?php echo $overlay_bg; ?>">
 		<div class="grid-x grid-margin-x">
 			<div class="cell medium-12 large-12">
 			<?php
@@ -42,7 +43,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="bg-img <?php echo $overlay_bg; ?>" data-aos="fade-left" data-aos-delay="900" data-interchange="[<?php echo $banner_image['sizes']['fp-large'];?>, small], [<?php echo $banner_image['sizes']['fp-large'];?>, medium], [<?php echo $banner_image['sizes']['fp-large'];?>, large], [<?php echo $banner_image['sizes']['fp-xlarge'];?>, xlarge]"></div>
 </div>
 
 
