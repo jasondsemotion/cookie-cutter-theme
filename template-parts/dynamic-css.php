@@ -175,16 +175,9 @@
 	    background: <?= $mobile_menu_background ?>;
     }
 
-    /*.bg-img::before {
-		content: '';
-		width: 100%;
-		height: 100%;
-		background: <?= $overlay_bg ?>;
-		opacity: 0.7;
-	}
-	.hero-inner h1 {
-		color: <?= $overlay_txt ?>;
-	}*/
+    .hero-style-bg-black h1, .hero-style-bg-black h2, .hero-style-bg-black h3, .hero-style-bg-black h4, .hero-style-bg-black h5 {
+	    color: <?= $header_font_colour; ?>;
+    }
 
 
 </style>
