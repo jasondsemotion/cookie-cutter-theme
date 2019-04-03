@@ -70,7 +70,7 @@
 
     h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
         font-family: <?= $heading_font_family ?>;
-        font-size: <?= $heading_font_size ?>px;
+        /*font-size: <?= $heading_font_size ?>px;*/
         color: <?= $heading_font_colour ?>;
         font-weight: 500;
     }
@@ -80,7 +80,7 @@
     }
 
     h3 {
-        font-size: <?= $heading_font_size / 2 + 5; ?>px;
+        /*font-size: <?= $heading_font_size / 2 + 5; ?>px;*/
     }
 
     h4 {
