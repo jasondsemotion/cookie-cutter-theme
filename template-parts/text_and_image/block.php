@@ -50,7 +50,7 @@ if($widths == 'seventy-thirty') {
 
         <?php if($layout == 'textfirst') { ?>
 
-	        <div class="cell <?= $width_one ?>" style="background-color:<?= $background ?>; padding:<?= $padding ?>;">
+	        <div class="cell <?= $width_one ?> txt-block" style="background-color:<?= $background ?>; padding:<?= $padding ?>;">
 	            <div data-aos="fade-left" data-aos-delay="800" class="title">
 	                <h2><?= $title ?></h2>
 	            </div>
@@ -68,7 +68,7 @@ if($widths == 'seventy-thirty') {
             <img class="txt-img-blk" data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]" alt="">
         </div>
 
-        <div class="cell <?= $width_two ?>" style="background-color:<?= $background ?>; padding:<?= $padding ?>;">
+        <div class="cell <?= $width_two ?> txt-block" style="background-color:<?= $background ?>; padding:<?= $padding ?>;">
 
 
             <?php if( get_sub_field('title') ): ?>

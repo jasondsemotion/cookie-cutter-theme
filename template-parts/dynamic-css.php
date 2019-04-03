@@ -33,12 +33,10 @@
 	$footer_header_colour_text = get_field('footer_header_colour_text');
 
 
-
 ?>
 
 
 <style>
-
 
     <?php  if ( ! is_admin() ) { ?>
         html, body {
@@ -177,6 +175,10 @@
 
     .hero-style-bg-black h1, .hero-style-bg-black h2, .hero-style-bg-black h3, .hero-style-bg-black h4, .hero-style-bg-black h5 {
 	    color: <?= $header_font_colour; ?>;
+    }
+
+    .hero .hero-inner h1 {
+	    color: <?= $paragraph_font_colour ?>;
     }
 
 
