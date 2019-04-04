@@ -8,7 +8,7 @@
  *
  */
 ?>
-<div class="page-section main-container " >
+<section class="page-section main-container " >
 
 
 	<div class="grid-x grid-margin-x">
@@ -54,4 +54,4 @@
 	</div>
 
 
-</div>
+</section>

@@ -28,6 +28,11 @@ get_header(); ?>
 								// load article
 								get_template_part( 'template-parts/text_and_image/block' );
 
+							elseif( get_row_layout() == 'text_and_image_alt' ):
+
+								// load article
+								get_template_part( 'template-parts/text_and_image/block-alt' );
+
 							elseif( get_row_layout() == 'image' ):
 
 								// load article
@@ -66,6 +71,12 @@ get_header(); ?>
 
 								// load quote
 								get_template_part( 'template-parts/masonary/block' );
+
+
+							elseif( get_row_layout() == 'spacer' ):
+
+								// load quote
+								get_template_part( 'template-parts/spacer/block' );
 
 					        endif;
 

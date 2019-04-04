@@ -6,7 +6,7 @@
  *
  *
  */
-
+$sidespadd = get_sub_field('add_side_padding');
 $title = get_sub_field('title');
 $content = get_sub_field('content');
 $image = get_sub_field('image');
@@ -45,27 +45,36 @@ if($widths == 'seventy-thirty') {
 ?>
 
 
-<section class="page-section main-container <?php if($layout == 'imagefirst') { echo 'image-first'; } ?>" id="<?= $id ?>">
-    <div class="grid-x grid-margin-x">
+
+
+<section class="page-section <?php if( get_sub_field('add_side_padding') ): ?>side-p<?php endif; ?>
+ <?php if($layout == 'imagefirst') { echo 'image-first'; } ?>" id="<?= $id ?>">
+	<div class="grid-x grid-margin-xx">
 
         <?php if($layout == 'textfirst') { ?>
 
 	        <div class="cell <?= $width_one ?> txt-block" style="background-color:<?= $background ?>; padding:<?= $padding ?>;">
+
 	            <div data-aos="fade-left" data-aos-delay="800" class="title">
 	                <h2><?= $title ?></h2>
 	            </div>
+
 	            <div data-aos="fade-right" data-aos-delay="1500"><?= $content ?></div>
-	            <img class="txt-img-blk" data-aos="fade-left" data-aos-delay="1800" src="<?= $secondary_image ?>">
+
 	        </div>
 
 	        <div data-aos="fade-left" data-aos-delay="400" class="cell <?= $width_two ?>">
-	        <img class="txt-img-blk" data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]" alt="">
+
+	        <div class="txt-img-blk cover" data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]"></div>
+
 	        </div>
 
         <?php } else { ?>
 
         <div data-aos="fade-right" data-aos-delay="400" class="cell <?= $width_one ?>">
-            <img class="txt-img-blk" data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]" alt="">
+
+            <div class="txt-img-blk cover" data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]"></div>
+
         </div>
 
         <div class="cell <?= $width_two ?> txt-block" style="background-color:<?= $background ?>; padding:<?= $padding ?>;">
@@ -79,12 +88,11 @@ if($widths == 'seventy-thirty') {
 
             <div data-aos="fade-right" data-aos-delay="1500"><?= $content ?></div>
             <img data-aos="fade-left" data-aos-delay="1800" src="<?= $secondary_image ?>">
+
+
         </div>
 
 
         <?php } ?>
     </div>
 </section>
-
-
-
