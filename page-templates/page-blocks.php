@@ -78,6 +78,19 @@ get_header(); ?>
 								// load quote
 								get_template_part( 'template-parts/spacer/block' );
 
+
+							elseif( get_row_layout() == 'spacer' ):
+
+								// load quote
+								get_template_part( 'template-parts/spacer/block' );
+
+
+							elseif( get_row_layout() == 'bulletpoints' ):
+
+								// load quote
+								get_template_part( 'template-parts/bulletpoints/block' );
+
+
 					        endif;
 
 					    endwhile;

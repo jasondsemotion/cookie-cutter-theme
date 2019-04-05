@@ -84,7 +84,7 @@
     }
 
     h4 {
-        font-size: <?= $heading_font_size / 3 + 9; ?>px;
+        font-size: <?= $heading_font_size / 2; ?>px;
     }
 
     h5 {
