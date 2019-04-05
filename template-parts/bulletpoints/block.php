@@ -25,7 +25,7 @@ $background = get_sub_field('background_colour');
 		<?php $image = get_sub_field('image');?>
 		<div class="cell small-12 medium-6 large-4 bulletpoint-image">
 		    <img data-aos="fade-left" data-aos-delay="250" data-interchange="[<?php echo $image['sizes']['featured-small'];?>, small], [<?php echo $image['sizes']['featured-medium'];?>, medium], [<?php echo $image['sizes']['featured-large'];?>, large], [<?php echo $image['sizes']['featured-xlarge'];?>, xlarge]" alt="">
-		    <h4 data-aos="fade-left" data-aos-delay="450"><?= get_sub_field('point'); ?>sss</h4>
+		    <h4 data-aos="fade-left" data-aos-delay="450"><?= get_sub_field('point'); ?></h4>
 		</div>
 		<?php endwhile; else : endif; ?>
 	         </div>
