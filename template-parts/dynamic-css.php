@@ -54,17 +54,19 @@
 
     .download-brochure-button {
         background-color: <?= $primary; ?>;
-        color: <?= $heading_font_colour ?>;
+        /*color: <?= $heading_font_colour ?>;*/
+        color: #fff;
         padding: 10px 20px;
         font-size: 14px;
         text-decoration: none;
-        margin-top: 70px;
+        margin-top: 40px;
         display: table;
     }
 
     .download-brochure-button {
         background-color: <?= $primary; ?>!important;
-        color: <?= $heading_font_colour ?>!important;
+        /*color: <?= $heading_font_colour ?>!important;*/
+        color: #fff;
         font-weight: bold!important;
     }
 

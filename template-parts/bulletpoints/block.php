@@ -19,8 +19,27 @@ $background = get_sub_field('background_colour');
             <h2 data-aos="fade-left" data-aos-delay="250"><?= get_sub_field('title') ?></h2>
         </div>-->
 
+
+
         <div class="cell small-12 bullet-club" style="background-color: <?=$background;?>">
 	         <div class="grid-x grid-margin-xx">
+
+
+		          <div class="cell small-12">
+				        <div class="intro-bullet">
+					        	<div class="title">
+									<h2>Heading</h2>
+					        	</div>
+								<div class="text-b">
+									<p>It was home to Blackbeard and a playground for Pablo Escobar</p>
+									<p>It was home to Blackbeard and a playground for Pablo Escobar</p>
+								</div>
+				        </div>
+			        </div>
+
+
+
+
 		         <?php if( have_rows('bulletpoint') ): while ( have_rows('bulletpoint') ) : the_row(); ?>
 		<?php $image = get_sub_field('image');?>
 		<div class="cell small-12 medium-6 large-4 bulletpoint-image">
