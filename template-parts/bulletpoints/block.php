@@ -10,6 +10,9 @@
 $section_id = get_sub_field('section_id');
 $image = get_sub_field('image');
 $background = get_sub_field('background_colour');
+$layout = get_sub_field('layout');
+$title = get_sub_field('title');
+$content = get_sub_field('content');
 ?>
 
 
@@ -25,19 +28,25 @@ $background = get_sub_field('background_colour');
 	         <div class="grid-x grid-margin-xx">
 
 
+		         <?php if($layout == 'intro') { ?>
+
+
 		          <div class="cell small-12">
 				        <div class="intro-bullet">
 					        	<div class="title">
-									<h2>Heading</h2>
+									<h2><?= $title ?></h2>
 					        	</div>
 								<div class="text-b">
-									<p>It was home to Blackbeard and a playground for Pablo Escobar</p>
-									<p>It was home to Blackbeard and a playground for Pablo Escobar</p>
+									<?= $content ?>
 								</div>
 				        </div>
-			        </div>
+			      </div>
 
 
+				<?php } else { ?>
+
+
+				 <?php } ?>
 
 
 		         <?php if( have_rows('bulletpoint') ): while ( have_rows('bulletpoint') ) : the_row(); ?>
