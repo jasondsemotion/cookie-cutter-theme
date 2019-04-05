@@ -13,6 +13,8 @@
     $terms = get_field('terms');
     $terms_and_conditions = get_field('terms_and_conditions');
 ?>
+<div class="page-section" id="contact">
+
 <footer id="footer">
     <div class="main-container">
         <div class="grid-x grid-margin-x">
@@ -59,6 +61,8 @@
     </div>
 </footer>
 
+
+</div>
 
 </div>
 <?php wp_footer(); ?>
