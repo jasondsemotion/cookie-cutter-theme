@@ -1,5 +1,4 @@
 <?php
-
 	if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
@@ -132,6 +131,7 @@ acf_add_local_field_group(array(
 				'Palatino, serif' => 'Palatino',
 				'"Libre Baskerville", serif' => 'Libre Baskerville',
 				'"Montserrat", sans-serif' => 'Montserrat',
+				'"PT Serif", serif' => 'PT Serif',
 			),
 			'default_value' => array(
 				0 => '"Montserrat", sans-serif',
