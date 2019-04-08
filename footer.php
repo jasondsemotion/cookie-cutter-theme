@@ -38,6 +38,12 @@
 		                 <div class="name"><?= get_sub_field('name'); ?></div>
 		                 <a href="mailto:<?= get_sub_field('email'); ?>"><?= get_sub_field('email'); ?></a><br>
 						 <a href="tel:<?= get_sub_field('contact_number'); ?>"><?= get_sub_field('contact_number'); ?></a>
+
+						 <?php if( get_sub_field('website') ): ?>
+						 <br><a href="<?= get_sub_field('website'); ?>" title="<?= get_sub_field('website'); ?>"><?= get_sub_field('website_title'); ?></a>
+						<?php endif; ?>
+
+
 		                </div>
 	                </div>
 	                 <?php endwhile; else : endif; ?>

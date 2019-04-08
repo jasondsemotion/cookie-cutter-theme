@@ -4,6 +4,7 @@
     $background = get_sub_field('background_colour');
     $section_id = get_sub_field('section_id');
     $layout = get_sub_field('layout');
+    $padding = get_sub_field('padding_on_text_content');
 ?>
 
 
@@ -24,7 +25,7 @@
 
             <?php if($content) { ?>
             <div data-aos="fade-right" data-aos-delay="1500">
-	            <div class="copy-box">
+	            <div class="copy-box" style="padding:<?= $padding ?>;">
 	            <?= $content ?>
 	            </div>
 	        </div>
@@ -51,7 +52,7 @@
 
             <?php if($content) { ?>
             <div data-aos="fade-right" data-aos-delay="1500">
-	            <div class="copy-box">
+	            <div class="copy-box" style="padding:<?= $padding ?>;">
 	            <?= $content ?>
 	            </div>
 	        </div>

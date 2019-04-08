@@ -101,24 +101,24 @@ $layout = get_sub_field('heading_position');
                 </tr>
             </table>
 
-
-
+			<div class="download-files">
+				<div class="grid-x grid-margin-x">
+					<?php if($brochure) { ?>
+							<div class="cell small-12 medium-12 large-12">
+								<div class="grid-x grid-margin-x">
+										<div class="cell small-12 medium-12 large-6">
+							                <a href="<?= $brochure; ?>" class="button download-brochure-button">Download</a>
+							            </div>
+								</div>
+							</div>
+					<?php } ?>
+				</div>
+			</div>
 
 
 			<?php if( have_rows('extra_buttons') ): ?>
 			<div class="extra-files">
 				<div class="grid-x grid-margin-x">
-
-
-					<?php if($brochure) { ?>
-					<div class="cell small-12 medium-12 large-12">
-						<div class="grid-x grid-margin-x">
-								<div class="cell small-12 medium-12 large-6">
-					                <a href="<?= $brochure; ?>" class="button download-brochure-button">Download</a>
-					            </div>
-						</div>
-					</div>
-				     <?php } ?>
 
 
 					<?php while( have_rows('extra_buttons') ): the_row();
