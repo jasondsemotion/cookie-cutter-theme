@@ -1,5 +1,6 @@
 <?php
 $brochure = get_sub_field('download_brochure_url');
+$brochuretitle = get_sub_field('download_brochure_title');
 $total_sq = get_sub_field('total_sq_ft');
 $total_m = get_sub_field('total_sq_m');
 $section_id = get_sub_field('section_id');
@@ -107,7 +108,7 @@ $layout = get_sub_field('heading_position');
 							<div class="cell small-12 medium-12 large-12">
 								<div class="grid-x grid-margin-x">
 										<div class="cell small-12 medium-12 large-6">
-							                <a href="<?= $brochure; ?>" class="button download-brochure-button">Download</a>
+							                <a href="<?= $brochure; ?>" class="button download-brochure-button"><?= $brochuretitle; ?></a>
 							            </div>
 								</div>
 							</div>
