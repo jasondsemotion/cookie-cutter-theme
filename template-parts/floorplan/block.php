@@ -35,21 +35,25 @@ $layout = get_sub_field('heading_position');
                     $size = 'full'; // (thumbnail, medium, large, full or custom size)
                     $slide_counter++;
                 ?>
-                <div data-hash="<?= $slide_counter ?>" class="item">
-                    <h4><?= get_sub_field('title') ?></h4>
-                    <?php
-                    if( $image ) { ?>
-				 <a class="chocolat-image" href="<?php echo $image['url']; ?>" title="<?= get_sub_field('title') ?>">
 
-					<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <?php if( get_sub_field('image') ): ?>
 
-					<?php	}
-					?>
-				 </a>
+	                <div data-hash="<?= $slide_counter ?>" class="item">
+	                    <h4><?= get_sub_field('title') ?></h4>
+	                    <?php
+	                    if( $image ) { ?>
+					 <a class="chocolat-image" href="<?php echo $image['url']; ?>" title="<?= get_sub_field('title') ?>">
 
+						<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
 
+						<?php	}
+						?>
+					 </a>
 
-                </div>
+	                </div>
+
+                <?php endif; ?>
+
             <?php endwhile; else : endif; ?>
             </div>
         </div>
