@@ -99,11 +99,14 @@ $layout = get_sub_field('heading_position');
                     <td><a href="#<?php echo $table_counter; ?>"><?= get_sub_field('sq_m'); ?></a></td>
                 </tr>
                 <?php endwhile; else : endif; ?>
-                <tr>
-                    <td><strong>Total:</strong></td>
-                    <td><strong><?= $total_sq ?></strong></td>
-                    <td><strong><?= $total_m ?></strong></td>
-                </tr>
+
+                <?php if( get_sub_field('total_sq_ft') ): ?>
+	                <tr>
+	                    <td><strong>Total:</strong></td>
+	                    <td><strong><?= $total_sq ?></strong></td>
+	                    <td><strong><?= $total_m ?></strong></td>
+	                </tr>
+                <?php endif; ?>
             </table>
 
 			<div class="download-files">
