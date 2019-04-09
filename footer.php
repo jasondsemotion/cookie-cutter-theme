@@ -57,7 +57,7 @@
                 <?= $terms ?>
 	            </div>
             </div>
-            <div class="cell small-12 terms-sk">
+            <div class="cell small-12">
                 <p class="terms"><?= $terms_and_conditions; ?></p>
             </div>
             <div class="cell small-12 accreditation">
