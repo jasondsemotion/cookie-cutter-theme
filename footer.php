@@ -57,7 +57,7 @@
                 <?= $terms ?>
 	            </div>
             </div>
-            <div class="cell small-12">
+            <div class="cell small-12 terms-sk">
                 <p class="terms"><?= $terms_and_conditions; ?></p>
             </div>
             <div class="cell small-12 accreditation">
@@ -71,6 +71,8 @@
 </div>
 
 </div>
+
+
 <?php wp_footer(); ?>
 
 
